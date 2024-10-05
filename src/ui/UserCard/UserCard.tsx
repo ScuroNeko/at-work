@@ -10,16 +10,13 @@ const UserCard = ({ user }: { user: UserType }) => {
     const dispatch = useAppDispatch();
 
     return (
-        <div className="UserCard">
-            {user.archived ? (
-                <img src="./user-icon.png" alt="" style={{filter: 'grayscale(100%)'}} className="UserCard__Image"/>
-            ) : (<img src='./user-icon.png' alt='' className="UserCard__Image"/>)}
-
+        <div className={user.archived ? 'UserCard Archived' : "UserCard"}>
+            <img src='./user-icon.png' alt='' className="UserCard__Image"/>
 
             <div className="UserCard__Info">
-            <div className="UserCard_Top">
+                <div className="UserCard_Top">
                     <div className="UserCard_Name">
-                        <span>{user.name}</span>
+                    <span>{user.name}</span>
                         {user.archived ? (
                             <Dropdown content={[{
                                 text: 'Активировать',

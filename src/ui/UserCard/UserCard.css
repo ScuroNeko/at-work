@@ -37,6 +37,10 @@
 .UserCard__Image {
     height: 120px;
 }
+.UserCard.Archived .UserCard__Image {
+    filter: grayscale(100%);
+}
+
 .UserCard__Info {
     width: 100%;
     height: 100%;
@@ -53,9 +57,20 @@
     font-weight: 600;
     margin-bottom: 4px;
 }
+.UserCard.Archived .UserCard_Name {
+    color: #595959;
+}
 .UserCard_Company {
     color: #595959;
+    font-size: 16px;
+}
+.UserCard.Archived .UserCard_Company {
+    color: #9c9c9c;
 }
 .UserCard_City {
     color: #9c9c9c;
+    font-size: 14px;
+}
+.UserCard.Archived .UserCard_City {
+    color: #dadada;
 }
