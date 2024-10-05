@@ -1,0 +1,137 @@
+@media screen and (max-width: 1160px) {
+    .EditBack {
+        margin-left: 16px;
+        margin-bottom: 20px;
+    }
+
+    .Edit {
+        flex-direction: column;
+        padding: 0 16px 32px;
+        box-sizing: border-box;
+    }
+    .UserEditCard {
+        margin: auto;
+    }
+    .UserEditCard {
+        width: 100%;
+        padding: 28px;
+        margin-bottom: 32px;
+    }
+    .UserEditCard_Image {
+        margin-bottom: 24px;
+        width: 100%;
+        height: 187px;
+    }
+    .UserEdit {
+        width: 100%;
+        padding: 28px;
+    }
+
+    .Input, .Button {
+        width: 100% !important;
+    }
+}
+@media screen and (min-width: 1161px) {
+    .EditBack {
+        margin-bottom: 44px;
+    }
+    .Edit {
+        flex-direction: row;
+    }
+    .UserEditCard {
+        width: 360px;
+        margin-right: 40px;
+    }
+    .UserEdit {
+        width: 760px;
+        padding: 40px;
+    }
+    .UserEditCard_Image {
+        margin-bottom: 40px;
+        width: 280px;
+        height: 485px;
+    }
+}
+
+.EditBack {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #595959;
+}
+.Edit {
+    position: relative;
+    display: flex;
+}
+
+.PopupContainer {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #00000080;
+}
+.Popup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FDFDFD;
+    width: 310px;
+    height: 211px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.PopupClose {
+    position: absolute;
+    top: 27px;
+    right: 27px;
+    cursor: pointer;
+}
+.PopupImage {
+    width: 84px;
+    height: 84px;
+}
+.PopupText {
+    font-size: 20px;
+    font-weight: 600;
+    color: #595959;
+}
+
+.UserEditCard {
+    border-radius: 16px;
+    background-color: #FDFDFD;
+    box-sizing: border-box;
+}
+
+.UserEditCard_Image {
+    border-radius: 8px;
+    background: url("./user-image.jpeg") center/cover;
+}
+
+.UserEdit {
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: #FDFDFD;
+}
+
+.InputBlock {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+.InputBlock:last-child {
+    margin-bottom: 32px;
+}
+.InputTitle {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}

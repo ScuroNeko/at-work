@@ -1,0 +1,23 @@
+@media screen and (max-width: 1160px) {
+    .Category {
+        margin-bottom: 16px;
+    }
+}
+@media screen and (min-width: 1161px) {
+    .Category {
+        margin-bottom: 28px;
+    }
+}
+
+.Category {
+    width: 100%;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dadada;
+    cursor: pointer;
+}
+.Category.Inactive:hover {
+    color: #22A0BC;
+}
+.Category.Inactive {
+    color: #9c9c9c;
+}

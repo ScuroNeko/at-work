@@ -1,0 +1,24 @@
+@media screen and (max-width: 1160px) {
+    .Main {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .UserList {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+@media screen and (min-width: 1161px) {
+    .UserList {
+        width: 1160px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px 40px;
+    }
+}
+
+.UserList {
+    display: grid;
+    margin-bottom: 40px;
+}

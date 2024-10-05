@@ -1,0 +1,59 @@
+.Header_Wrapper {
+    width: 100%;
+    height: 56px;
+    background-color: #FDFDFD;
+}
+
+@media screen and (max-width: 1160px) {
+    .Header_Wrapper {
+        margin-bottom: 24px;
+    }
+    .Header {
+        width: 100%;
+    }
+    .Buttons {
+        display: none;
+    }
+}
+@media screen and (min-width: 1161px) {
+    .Header_Wrapper {
+        margin-bottom: 40px;
+    }
+    .Header {
+        width: 1160px;
+    }
+    .Buttons {
+        display: flex;
+    }
+}
+
+.Header {
+    box-sizing: border-box;
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.UserInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Buttons {
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.User {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.User_Icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
