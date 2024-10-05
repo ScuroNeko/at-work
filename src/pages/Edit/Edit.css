@@ -37,10 +37,12 @@
     }
     .Edit {
         flex-direction: row;
+        margin-bottom: 32px;
     }
     .UserEditCard {
         width: 360px;
         margin-right: 40px;
+        padding: 40px;
     }
     .UserEdit {
         width: 760px;
